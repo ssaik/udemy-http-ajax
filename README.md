@@ -16,13 +16,31 @@ Axios.Delete(url) -> To Delete Data
 ---
 Added default URL to index.js and removed base URL from all the components.
 
-Branch: 6RouteConfig
+### Branch: 6RouteConfig
+//Installed react-route-dom and wrapped App.js class with { BrowserRouter }, and moved all the components
+to Containers except Post. also created Posts new container
+
 ### `npm install --save react-router-dom`
 
 Now import "{ BrowserRouter }" from 'react-router-dom' and wrap out App.js component to enable routing mechanism all over the app.
 
 Put components into "Container" folder which needs to be routed. Here, Moving FullPost, NewPost from components to Container and also created another folder named "Posts".
 
+### Branch: 7ApplyingRoute
+Import { Route } from 'react-route-dom'
+
+Manually rendering tags:
+`<Route path='/' exact render={ () => <h1>i will display in home page only, because "exact" keyword used here.</h1>}>`
+`<Route path='/' render={ () => <h1>i will display in all pages where it starts with "/" ,/h1>}>`
+
+Rendering Components:
+`<Route path="/" exact component={<ComponentName>}>`
+
+Click on HOME, you will see Posts.
+Click on About Us, you won't see posts any more.
+
+## --------------------------------------------------------------------------------------------
+## --------------------------------------------------------------------------------------------
 ## Available Scripts
 
 In the project directory, you can run:
