@@ -39,6 +39,18 @@ Rendering Components:
 Click on HOME, you will see Posts.
 Click on About Us, you won't see posts any more.
 
+### brach: 8SwitchPages
+Note: Switching pages with <a> tag is not recommended, which reload the application, that means.. Clearing previous state.
+Instead re-render the pages.
+    use "Link", it is supported by react-route-dom.
+and also can parse extra parameters to the URL, by 
+    `<li><Link to="/">Home</Link></li>`
+    `<li><Link to={{pathname: "/new-post",hash: "#Submit",search: "?quick-submit=true"}}>New Post</Link></li>`
+
+Routing:
+    `<Route path="/" exact component={Posts} />`
+    `<Route path="/new-post" component={NewPost} />`
+
 ## --------------------------------------------------------------------------------------------
 ## --------------------------------------------------------------------------------------------
 ## Available Scripts
