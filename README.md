@@ -1,5 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Docs
+
+This is the template which is downloaded from section-9 - udemy course
+https://jsonplaceholder.typicode.com/ --> which is used for mock json api. It has dummy data.
+install AXIOS, which simple the steps to use XML HTTP Requests. writing XML with this languause is quite complex. SO install AXIOM - third party software.
+
+### `npm install axios --save`
+### `npm start` --> start npm after installing any new tool/software.
+
+Axios.get(url) -> To get data
+Axios.post(url,data) -> To post data
+Axios.Delete(url) -> To Delete Data
+
+
 ## Available Scripts
 
 In the project directory, you can run:
