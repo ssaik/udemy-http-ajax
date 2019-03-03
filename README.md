@@ -13,6 +13,8 @@ Axios.get(url) -> To get data
 Axios.post(url,data) -> To post data
 Axios.Delete(url) -> To Delete Data
 
+---
+Added default URL to index.js and removed base URL from all the components.
 
 ## Available Scripts
 
