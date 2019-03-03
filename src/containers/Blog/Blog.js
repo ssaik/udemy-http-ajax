@@ -14,6 +14,8 @@ class Blog extends Component {
         selectedId : null
     }
 
+
+
     componentDidMount() {
         Axios.get("/posts")
             .then( res => {
@@ -47,6 +49,14 @@ class Blog extends Component {
 
         return (
             <div>
+                <header className="Blog">
+                    <nav>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about-us">About Us</a></li>
+                        </ul>
+                    </nav>
+                </header>
                 <section className="Posts">
                     {posts}
                 </section>
