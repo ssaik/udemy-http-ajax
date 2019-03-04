@@ -51,6 +51,18 @@ Routing:
     `<Route path="/" exact component={Posts} />`
     `<Route path="/new-post" component={NewPost} />`
 
+### branch: 9DynArgURL
+Better to use NavLink instead of Link, which enables you to enable styles.
+and also put exact to the main page.
+
+can pass dynamic url by <Link id='/:id' component = {FullPost} />           -- Parent
+    Now, wrap child component by Link and Pass the id to the Link. i.e.     -- Child
+        <Link to={'/'+post.id} key={post.id}>
+            ...
+            ...
+        </Link>
+
+
 ## --------------------------------------------------------------------------------------------
 ## --------------------------------------------------------------------------------------------
 ## Available Scripts
